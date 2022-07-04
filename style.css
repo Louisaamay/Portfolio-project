@@ -3,27 +3,149 @@ body {
   background-repeat: no-repeat;
 }
 
-h1,
-h2,
-h3 {
+.introduction {
   text-align: center;
   font-family: "Kantumruy Pro", sans-serif;
-}
-h1 {
   font-size: 96px;
   margin-bottom: 10px;
   color: #133356;
 }
 
-h2 {
+.description {
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
   font-size: 24px;
   opacity: 70%;
   color: #43a3bd;
 }
 
 h3 {
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
   margin-top: 200px;
   color: #133356;
+}
+
+#about {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+#about-me {
+  text-align: right;
+  font-size: 16px;
+  font-family: "Kantumruy Pro", sans-serif;
+  margin-top: 0;
+}
+
+.row-1 {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.row-2 {
+  display: flex;
+  padding: 70px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+}
+
+#box-1 {
+  display: flex;
+
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 30px;
+  justify-content: flex-end;
+}
+
+#box-2 {
+  display: flex;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+.fa-people-carry-box {
+  display: flex;
+  font-size: 120px;
+  height: auto;
+  padding: 15px;
+  color: #131d25;
+}
+.box-4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 20px;
+}
+
+.box-3 {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 30px;
+}
+
+#box-3 {
+  display: flex;
+  color: white;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 30px;
+}
+#box-4 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  #box-2,
+  #box-1,
+  .fa-people-carry-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  #box-2,
+  #box-1,
+  .fa-people-carry-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.img-2 {
+  max-width: 100%;
+  height: auto;
+  border: 15px solid white;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .navbar {
@@ -49,6 +171,7 @@ h3 {
   justify-content: center;
   font-family: "Kantumruy Pro", sans-serif;
   color: #133356;
+  background-color: white;
   padding: 15px 20px;
   border: 1px solid white;
   border-radius: 10px;
@@ -57,15 +180,31 @@ h3 {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-a {
+#marvel-link,
+#weather-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  color: #133356;
+  background-color: white;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.learn-more {
   text-decoration: none;
   color: black;
 }
-a :hover {
+.learn-more :hover {
   color: grey;
 }
 
-a:visited {
+.learn-more :visited {
   text-decoration: none;
   color: black;
 }
@@ -77,4 +216,31 @@ video {
   width: 100px;
   max-height: 60px;
   padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #131d25;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.fa-instagram-square {
+  padding-right: 15px;
+}
+
+.fa-linkedin {
+  padding-right: 15px;
+}
+
+.credit {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Kantumruy Pro", sans-serif;
+  opacity: 60%;
+  padding-bottom: 20px;
 }
