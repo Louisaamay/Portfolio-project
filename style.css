@@ -277,7 +277,7 @@ a {
 }
 
 .heading {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   font-family: var(--font-family);
   background: radial-gradient(
@@ -297,6 +297,14 @@ a {
   text-align: center;
   font-family: var(--font-family);
   padding: 10px 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #marvel-video,
