@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #131d25;
+  --secondary-color: #fe7c01;
+  --font-family: "Kantumruy Pro", sans-serif;
+}
+
 body {
   background: linear-gradient(to top, #dfe9f3 0%, white 100%);
   background-repeat: no-repeat;
@@ -5,25 +11,25 @@ body {
 
 .introduction {
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 96px;
   margin-bottom: 10px;
-  color: #133356;
+  color: var(--primary-color);
 }
 
 .description {
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 24px;
   opacity: 70%;
-  color: #43a3bd;
+  color: var(--secondary-color);
 }
 
 h3 {
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   margin-top: 200px;
-  color: #133356;
+  color: var(--secondary-color);
 }
 
 #about {
@@ -36,7 +42,7 @@ h3 {
 #about-me {
   text-align: right;
   font-size: 16px;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   margin-top: 0;
 }
 
@@ -80,7 +86,7 @@ h3 {
   display: flex;
   margin-top: 50px;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 30px;
   justify-content: flex-end;
 }
@@ -88,7 +94,7 @@ h3 {
   display: flex;
   margin-top: 0px;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 30px;
   justify-content: flex-end;
 }
@@ -96,7 +102,7 @@ h3 {
 #box-2 {
   display: flex;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
   justify-content: flex-end;
 }
@@ -114,7 +120,7 @@ h3 {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
 }
 
@@ -123,7 +129,7 @@ h3 {
   margin-top: 100px;
   justify-content: center;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 30px;
 }
 
@@ -133,7 +139,7 @@ h3 {
   margin-top: 100px;
   justify-content: center;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 30px;
 }
 #box-4 {
@@ -141,7 +147,7 @@ h3 {
   color: white;
   justify-content: center;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
 }
 
@@ -182,7 +188,7 @@ h3 {
 }
 
 .navbar {
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   background-color: transparent !important;
 }
 
@@ -191,18 +197,18 @@ h3 {
 }
 
 .navbar-brand {
-  color: #43a3bd !important;
+  color: var(--primary-color) !important;
 }
 
 .nav-link {
-  color: #133356 !important;
+  color: var(--primary-color) !important;
 }
 
 #learn-more {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   color: #133356;
   background-color: white;
   padding: 15px 20px;
@@ -218,7 +224,7 @@ h3 {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   color: #133356;
   background-color: white;
   padding: 15px 20px;
@@ -243,6 +249,10 @@ h3 {
 }
 video {
   max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #logo {
@@ -273,7 +283,7 @@ a {
 .credit {
   text-align: center;
   font-size: 12px;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   opacity: 60%;
   padding-bottom: 20px;
 }
@@ -282,6 +292,6 @@ a {
   display: block;
   margin: 0 auto;
   text-align: center;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
 }
