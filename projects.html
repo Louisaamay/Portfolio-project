@@ -10,6 +10,10 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <meta
+      name="description"
+      content="Louisa is a front-end developer based in Australia, proficient in HTML, CSS and Javascript. Check out her projects here."
+    />
     <script
       src="https://kit.fontawesome.com/37bd63c507.js"
       crossorigin="anonymous"
@@ -37,8 +41,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/logo.jpg" id="logo" />
+        <a class="navbar-brand" href="/index.html" title="Homepage">
+          <img src="/logo.jpg" id="logo" alt="Carmody Coding logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -54,18 +58,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/index.html"
+                title="Homepage"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="/about.html" title="About Louisa"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.html">Projects</a>
+              <a class="nav-link" href="/projects.html" title="Louisa's work"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link" href="/contact.html" title="Contact Louisa"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -78,11 +92,11 @@
           <h1 id="box-1">Think outside the box</h1>
           <h2 id="box-2">Creative and innovative applications</h2>
           <h3 id="about">About me</h3>
-          <h3 id="about-me">
+          <h4 id="about-me">
             I am a Front-end developer based in Sydney, Australia.
             <br />
             I am proficient in HTML, CSS and Javascript.
-          </h3>
+          </h4>
         </div>
         <div class="col-md-6">
           <i class="fa-solid fa-people-carry-box"></i>
@@ -95,6 +109,7 @@
               muted
               id="my-video"
               class="vid-fluid rounded"
+              alt="Marvel landing page preview"
             >
               <source
                 src="Marvel-video.mp4"
@@ -104,7 +119,7 @@
             </video>
           </div>
           <div class="col-md-6">
-            <h1 class="box-3" id="box-3">Marvel Landing Page</h1>
+            <h2 class="box-3" id="box-3">Marvel Landing Page</h2>
             <h2 class="box-4" id="box-4">
               Dive into the world of the Mavel Cinematic Universe
             </h2>
@@ -116,7 +131,7 @@
         </div>
         <div class="row row-3">
           <div class="col-md-6">
-            <h1 class="box-3" id="weather-title">Weather App</h1>
+            <h2 class="box-3" id="weather-title">Weather App</h2>
             <h2 class="box-4">
               Fully functional weather app built with html, css and javascript
             </h2>
@@ -134,6 +149,7 @@
               muted
               id="my-video"
               class="vid-fluid rounded"
+              alt="Weather app preview"
             >
               <source
                 src="Weather App.mp4"
@@ -143,24 +159,31 @@
             </video>
           </div>
         </div>
+        <div class="row row-2">
+          <h2 class="box-3" id="coming-soon">Coming soon</h2>
+          <h3 class="box-3" id="shush-emoji">🤫</h3>
+        </div>
       </div>
     </div>
-    <footer>
+    <footer class="projects-footer">
       <span class="icons">
         <div>
           <a
             href="https://www.instagram.com/carmodycoding/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR1G6lZrdRZI71rdtnXjMU31XOOAO35cNvruNdAxzDKI8Jbdb_dm2a9ZkhU"
+            title="Carmody Coding instagram"
           >
             <i class="fa-brands fa-instagram-square"></i>
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/louisa-carmody-28b525117/"
+          <a
+            href="https://www.linkedin.com/in/louisa-carmody-28b525117/"
+            title="Louisa Carmody linked in"
             ><i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
         <div>
-          <a href="mailto:louisaamay@gmail.com"
+          <a href="mailto:louisaamay@gmail.com" title="Louisa Carmody email"
             ><i class="fa-solid fa-envelope"></i>
           </a>
         </div>
