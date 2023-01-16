@@ -1,7 +1,7 @@
 :root {
   --primary-color: #131d25;
   --secondary-color: #fe7c01;
-  --font-family: "Kantumruy Pro", sans-serif;
+  --font-family: "Press Start 2P", cursive;
 }
 /*homepage*/
 body {
@@ -12,15 +12,21 @@ body {
 .introduction {
   text-align: center;
   font-family: var(--font-family);
-  font-size: 96px;
+  font-size: 65px;
   margin-bottom: 10px;
   color: var(--primary-color);
+  transition: 0.5s;
+}
+
+.introduction:hover {
+  transition: 0.5s;
+  font-size: 75px;
 }
 
 .description {
   text-align: center;
   font-family: var(--font-family);
-  font-size: 24px;
+  font-size: 15px;
   opacity: 70%;
   color: var(--secondary-color);
 }
@@ -29,6 +35,7 @@ h3 {
   text-align: center;
   font-family: var(--font-family);
   margin-top: 150px;
+  font-size: 20px;
   color: var(--secondary-color);
 }
 .fa-people-carry-box,
@@ -44,6 +51,7 @@ h3 {
   display: flex;
   justify-content: center;
   font-family: var(--font-family);
+  font-size: 13px;
   color: #133356;
   background-color: white;
   padding: 15px 20px;
@@ -52,6 +60,11 @@ h3 {
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: 0.5s;
+}
+#learn-more:hover {
+  transition: 0.5s;
+  font-size: 16px;
 }
 .learn-more {
   text-decoration: none;
@@ -137,13 +150,44 @@ h3 {
 }
 
 #box-1 {
-  display: flex;
   margin-top: 50px;
-  text-align: center;
+  text-align: right;
   font-family: var(--font-family);
   font-size: 30px;
-  justify-content: flex-end;
+  z-index: 1;
 }
+
+#box-1::before,
+#box-1::after {
+  content: "";
+  padding: 50px;
+  position: absolute;
+  display: flex;
+  right: 55%;
+  top: 34%;
+  justify-content: flex-end;
+  transform: translateX(-50%) translateY(-50%) rotate(0);
+  border: 5px solid var(--secondary-color);
+  animation: spin 6s alternate infinite ease-in-out;
+}
+
+#box-1::before {
+  border-top: 5px solid var(--secondary-color);
+  border-left: 5px solid var(--secondary-color);
+  z-index: 0;
+}
+#box-1::after {
+  border-right: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  z-index: -1;
+}
+
+@keyframes spin {
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
 #box-5 {
   display: flex;
   margin-top: 0px;
@@ -280,7 +324,7 @@ h3 {
 
 /* navbar */
 .navbar {
-  font-family: var(--font-family);
+  font-family: "Kantumruy Pro";
   background-color: transparent !important;
 }
 
@@ -318,6 +362,12 @@ a {
   justify-content: center;
   padding-top: 30px;
   font-size: 25px;
+  transition: 0.5s;
+}
+
+.icons:hover {
+  font-size: 30px;
+  transition: 0.5s;
 }
 
 .fa-instagram-square {
