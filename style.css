@@ -397,6 +397,9 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .introduction {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -410,6 +413,9 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  .introduction {
+    font-size: 40px;
   }
 }
 
