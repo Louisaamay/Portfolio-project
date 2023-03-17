@@ -24,77 +24,36 @@
       crossorigin="anonymous"
     ></script>
 
-    <style>
-      @import url("http://fonts.cdnfonts.com/css/cerebri-sans");
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="/logo-mini.jpg" type="image/jpg" />
     <link rel="stylesheet" href="style.css" />
     <title>Louisa Carmody Projects</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html" title="Homepage">
-          <img src="logo.jpg" id="logo" alt="Carmody Coding logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/index.html"
-                title="Homepage"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About Louisa"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects.html" title="Louisa's work"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html" title="Contact Louisa"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
     </nav>
+
     <!--content-->
+    <img src="logo.png" class="lc-logo">
     <div class="container-fluid">
-      <div class="row row-1">
+      <div class="row row-1" id="box-design">
         <div class="col-md-6">
+          
           <h1 id="box-1">Think outside the box</h1>
           <h2 id="box-2">Creative and innovative applications</h2>
           <h3 id="about">About me</h3>
@@ -105,86 +64,52 @@
           </h4>
         </div>
         <div class="col-md-6">
-          <i class="fa-solid fa-people-carry-box"></i>
+          <i class="fa-solid fa-people-carry-box" id="box-carry"></i>
         </div>
         <div class="row row-2">
-          <div class="col-md-6">
-            <video
-              playsinline
-              autoplay
-              muted
-              id="my-video"
-              class="vid-fluid rounded"
-              alt="Marvel landing page preview"
-            >
-              <source
-                src="Marvel-video.mp4"
-                type="video/mp4"
-                id="marvel-video"
-              />
-            </video>
+          <div class="col-md-6" >
+            <img src="Warbworldsimg.png" id="project-1">
+            <br>
+            <p class="project-description">Book Launch
+              <br>
+              A design in progress. </p>
+             <button class="learn-more">Learn more</button>
+          
           </div>
-          <div class="col-md-6">
-            <h2 class="box-3" id="box-3">Marvel Landing Page</h2>
-            <h2 class="box-4" id="box-4">
-              Dive into the world of the Mavel Cinematic Universe
-            </h2>
-            <br />
-            <a href="https://stellar-horse-c7c70d.netlify.app/"
-              ><button id="marvel-link">Visit page</button></a
-            >
+          <div class="col-md-6" >
+            <img src="elektrikeelimg.png" id="project-2">
+            <br>
+            <p class="project-description">Ekektrik Eel Festival
+              <br>
+              A design in progress. 
+            </p>
+            
+            <button class="learn-more">Learn more</button>
+            
           </div>
-        </div>
         <div class="row row-3">
           <div class="col-md-6">
-            <h2 class="box-3" id="weather-title">Weather App</h2>
-            <h2 class="box-4">
-              Fully functional weather app built with html, css and javascript
-            </h2>
-            <br />
-
-            <a href="https://resilient-churros-a91e48.netlify.app/">
-              <button id="weather-link">Visit page</button></a
-            >
-            <br />
+          <img src="weatherappimg.png" id="project-3">
+          <br>
+          <p class="project-description">Fully functioning weather app
+            <br>
+            Coded with HTML, CSS, and Javascript using API          </p>
+          
+          <button class="learn-more">Learn more</button>
+          
           </div>
           <div class="col-md-6">
-            <video
-              playsinline
-              autoplay
-              muted
-              id="my-video"
-              class="vid-fluid rounded"
-              alt="Weather app preview"
-            >
-              <source
-                src="Weather App.mp4"
-                type="video/mp4"
-                id="weather-video"
-              />
-            </video>
+            <img src="marvelimg.png" id="project-4">
+            <br>
+            <p class="project-description">Marvel landing page
+              <br>
+              Coded with HTML and CSS
+            </p>
+            
+            <button class="learn-more">Learn more</button>
           </div>
         </div>
-             <div class="row row-4" id="box-6">
-           <div class="col-md-6">
-                <video
-                  playsinline
-                  autoplay
-                  muted
-                  id="my-video"
-                  class="vid-fluid rounded"
-                  alt="book website preview"
-                >
-                  <source src="WarofWorlds.mp4" type="video/mp4" id="website-video" />
-                </video>
-              </div>
-              <div class="col-md-6">
-            <h2 class="box-3" id="box-3">Coming soon 🤫</h2>
-            <h2 class="box-4" id="box-4">
-              War of Worlds, written by Louisa Carmody, is set to be published early 2023
-              with the launch of the book website to follow. The website has been coded using HTML and CSS, with the book purchasing system through Shopify. Animations and illustrations created in Adobe Fresco.
-          </div>
-      </div>
+       
 
     <footer class="projects-footer">
       <span class="icons">
