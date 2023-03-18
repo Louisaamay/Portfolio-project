@@ -30,6 +30,8 @@ body {
 .introduction {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
   font-family: var(--font-family);
   font-size: 50px;
@@ -41,13 +43,15 @@ body {
 }
 #hello {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-left: 10%;
   font-family: 'Abril Fatface', cursive;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 15%;
+  margin-top: 10%;
   color: black;
 }
 
@@ -118,6 +122,7 @@ transition: ease-in-out 0.3s;
   text-align: center;
   width: 130%;
   margin-left: 10%;
+  margin-bottom: -8%;
   
 }
 
@@ -139,19 +144,11 @@ transition: ease-in-out 0.3s;
 }
 
 .heading {
-  margin-top: 30px;
+  margin-top: 10%;
   text-align: center;
-  font-family: "Kantumruy Pro";
-  background: radial-gradient(
-    circle at -8.9% 51.2%,
-    rgb(255, 124, 0) 0%,
-    rgb(255, 124, 0) 15.9%,
-    rgb(255, 163, 77) 15.9%,
-    rgb(255, 163, 77) 24.4%,
-    rgb(19, 30, 37) 24.5%,
-    rgb(19, 30, 37) 66%
-  );
-  color: white;
+  font-family: 'abril fatface', cursive;
+  font-weight: 100;
+  color: black;
   padding: 20px 0px;
 }
 
@@ -166,10 +163,12 @@ transition: ease-in-out 0.3s;
 
 /* project page */
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: var(--font-family);
-  padding: 10px 150px;
-  margin-top: 40px;
+  margin-top: 2%;
   margin-bottom: 40px;
 }
 
@@ -361,39 +360,33 @@ font-family: var(--font-family);
   justify-content: center;
   text-align: center;
   font-size: 16px;
-  font-family: "Kantumruy Pro";
+  font-family: var(--font-family);
   margin-top: 0;
 }
 
 .contact-me {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
-  font-family: "Kantumruy Pro";
+  font-family: 'abril fatface', cursive;
   font-size: 60px;
-  margin-top: 20px;
-  padding: 80px;
-  color: white;
-  background: radial-gradient(
-    circle at -8.9% 51.2%,
-    rgb(255, 124, 0) 0%,
-    rgb(255, 124, 0) 15.9%,
-    rgb(255, 163, 77) 15.9%,
-    rgb(255, 163, 77) 24.4%,
-    rgb(19, 30, 37) 24.5%,
-    rgb(19, 30, 37) 66%
-  );
+  margin-top: 8%;
+  color: black;
+ 
 }
 .contact-icons {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   text-align: center;
-  font-family: "Kantumruy Pro";
+  font-family: var(--font-family);
   font-size: 65px;
 }
 .contact-information {
   display: flex;
   justify-content: space-evenly;
-  font-family: "Kantumruy Pro";
+  font-family: var(--font-family);
   font-size: 16px;
 }
 
