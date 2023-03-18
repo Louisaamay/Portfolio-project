@@ -7,7 +7,7 @@
 body {
 	padding: 0;
 	margin: 0;
-  background: #F5F5F5;
+  background: #ffffff;
 }
 .background-img {
   position: absolute;
@@ -35,8 +35,8 @@ body {
   font-size: 50px;
   margin-left: 10%;
   font-weight: 100;
-  margin-bottom: 10px;
-  color: black;
+  margin-bottom: -5%;
+  color: #5465FF;
 
 }
 #hello {
@@ -50,6 +50,8 @@ body {
   margin-top: 15%;
   color: black;
 }
+
+
 
 .description {
   display: flex;
@@ -74,20 +76,15 @@ body {
 .profile-img {
   display: flex;
   justify-content: flex-end;
-  text-align: right;
+  align-items: flex-end;
+  margin: 0 auto;
   width: 60%;
-  border-radius: 200px;
-  margin-left: 20%;
+  margin-top: -20%;
+  border: none;
+  border-radius: 300px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.mouse {
-  -webkit-transform:rotate(330deg);
-  -moz-transform: rotate(330deg);
-  -ms-transform: rotate(330deg);
-  -o-transform: rotate(330deg);
-  transform: rotate(330deg);
-}
 
 #home-page {
   display: flex;
@@ -96,17 +93,19 @@ body {
 
 .lc-logo {
 display: flex;
-justify-content: center;
-width:7%;
+align-items: flex-start;
+justify-content: flex-start;
+margin-left: 5%;
+width:10%;
 height: auto;
-margin-left: 2%;
 margin-top: 2%;
 transition: ease-in-out 0.3s;
 
 
+
 }
 .lc-logo:hover {
-  width: 6%;
+  width: 8%;
   transition: ease-in-out 0.3s;
   cursor: pointer;
 }
@@ -114,28 +113,21 @@ transition: ease-in-out 0.3s;
 .keyboard {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
   text-align: center;
-  width: 80%;
-  margin-top: -10%;
-  margin-left: 18%;
+  width: 130%;
+  margin-left: 10%;
   
 }
-.mouse {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  width: 50%;
-  margin-top: -10%;
-  margin-left: -20%;
-  
-}
+
 /*about page*/
 #about {
   display: flex;
   justify-content: flex-end;
   font-size: 18px;
   font-family: var(--font-family);
-  color: #fe7c01;
+  color: #788BFF;
   margin-top: 0;
 }
 
@@ -183,7 +175,7 @@ transition: ease-in-out 0.3s;
 
 
 #box-1 {
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: right;
   font-family: 'Abril Fatface', cursive;
   font-size: 30px;
@@ -193,7 +185,7 @@ transition: ease-in-out 0.3s;
 #box-carry {
   display: flex;
   justify-content: flex-start;
-  margin-top: 25%;
+  margin-top: 15%;
 
 }
 
@@ -269,7 +261,7 @@ font-family: var(--font-family);
 
 .learn-more:hover {
   color: white;
-  background: #131d25;
+  background: #5465FF;
   transition: ease-in-out 0.3s;
 }
 
@@ -411,43 +403,33 @@ font-family: var(--font-family);
 nav {
 	position: fixed;
   display: flex;
+  margin: 0 auto;
+  margin-left: 38%;
   justify-content: center;
-  text-align: center;
 	top: 20px;
   width: 25%;
-  margin-left: 38%;
   border-radius: 50px;
 	font-family: var(--font-family);
 	padding: 0 5%;
 	height: 50px;
-	background-color: black;
+	background-color: #5465FF;
   opacity: 70%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
 
-nav .links li:hover {
+.links:hover {
   color: aqua;
 }
 
-  
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: #fff;
-}
 nav .links {
-	float: right;
+	
 	padding: 0;
-  font-weight: 100;
-	margin: 0;
+  font-weight: bold;
+  margin: 0 auto;
 	height: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 }
 nav .links li {
@@ -459,7 +441,7 @@ nav .links a {
 	padding: 1em;
 	font-size: 16px;
 	font-weight: lighter;
-	color: #fff;
+	color: black;
 	text-decoration: none;
 }
 #nav-toggle {
@@ -476,17 +458,14 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: white;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
-  .nav {
-    backdrop-filter: blur(50px);
-    width: 5px;
 
-  }
+ 
 
 	nav .links {
 		float: none;
@@ -494,14 +473,13 @@ nav .icon-burger .line {
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 100px;
+		top:100px;
 		bottom: 100%;
 		width: auto;
 		height: auto;
 		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
-    backdrop-filter: blur(5px);
+    background-color: #5465FF;
+    backdrop-filter: blur(10px);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -599,6 +577,11 @@ a {
   .introduction {
     font-size: 40px;
   }
+  #box-carry {
+display: flex;
+justify-content: center;
+  }
+
 }
 
 @media (max-width: 768px) {
