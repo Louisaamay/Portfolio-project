@@ -83,10 +83,8 @@ body {
   align-items: flex-end;
   margin: 0 auto;
   width: 60%;
-  margin-top: -20%;
+  margin-top: -28%;
   border: none;
-  border-radius: 300px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -104,15 +102,12 @@ width:10%;
 height: auto;
 margin-top: 2%;
 transition: ease-in-out 0.3s;
-
-
-
 }
-.lc-logo:hover {
-  width: 8%;
-  transition: ease-in-out 0.3s;
-  cursor: pointer;
+#home-page-learn-more {
+  margin-top: -10%;
 }
+
+
 
 .keyboard {
   display: flex;
@@ -586,8 +581,12 @@ a {
 display: flex;
 justify-content: center;
   }
+  .lc-logo {
+    width: 20%;
+  }
 
 }
+
 
 @media (max-width: 768px) {
   #box-2,
@@ -603,6 +602,9 @@ justify-content: center;
   }
   .introduction {
     font-size: 40px;
+  }
+  .lc-logo {
+    width: 20%;
   }
 }
 
