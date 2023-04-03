@@ -551,6 +551,22 @@ a {
   opacity: 60%;
 }
 
+/* learn more pages*/
+
+.mockups {
+  margin-top: -10%;
+  width: 100%;
+  height: auto;
+}
+
+.book-title {
+  margin-top: 5%;
+  font-family: 'GFS Didot', serif;
+  text-align: center;
+  font-size: 90px;
+  padding: 0px;
+}
+
 /* responsive */
 @media (max-width: 576px) {
   #box-2,
