@@ -34,12 +34,24 @@ body {
   margin: 0 auto;
   text-align: center;
   font-family: var(--font-family);
-  font-size: 50px;
-  margin-left: 10%;
+  font-size: 40px;
+  margin-left: -10%;
   font-weight: 100;
   margin-bottom: -5%;
-  color: #5465FF;
+  color: #010101;
 
+}
+.line-vertical {
+display: flex;
+margin-left: -10%;
+border: 0.5px solid #000000;
+transform: rotate(90deg);
+z-index: 1;
+}
+
+.line-horizontal {
+border: 0.5px solid #000000;
+margin-top: 1%;
 }
 #hello {
   display: flex;
@@ -47,12 +59,12 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 10%;
+  margin-left: -10%;
   font-family: 'Abril Fatface', cursive;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 10%;
-  color: black;
+  margin-top: 35%;
+  color: #78CBC3;
 }
 
 
@@ -67,6 +79,59 @@ body {
   opacity: 70%;
   color: black;
 }
+
+.genres {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-style: italic;
+  color: #78cbc3;
+}
+.changing-text:before {
+	content: ' ';
+	animation: animate infinite 10s;
+}
+
+@keyframes animate {
+0% {
+	content: 'a UX Designer'
+}
+20% {
+	content: 'a UI Designer'
+}
+40% {
+	content: 'a Product Designer'
+}
+60% {
+	content: 'a Brand Designer'
+}
+80% {
+	content: 'a Web Designer'
+}
+100% {
+	content: 'your Designer'
+}
+
+}
+.image-carousell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 70%;
+  margin-top: -30%;
+	height: auto;
+	padding: 0px;
+	overflow: hidden;
+	border-radius: 20px;
+  filter: drop-shadow(5px 5px 30px rgb(151, 151, 151));
+ }
 
 .fa-people-carry-box,
 #email-icon {
@@ -98,9 +163,9 @@ display: flex;
 align-items: flex-start;
 justify-content: flex-start;
 margin-left: 5%;
-width:10%;
+width:5%;
 height: auto;
-margin-top: 2%;
+margin-top: 1%;
 transition: ease-in-out 0.3s;
 }
 #home-page-learn-more {
@@ -255,6 +320,7 @@ font-family: var(--font-family);
   align-items: center;
   justify-content: center;
   border: none;
+  text-decoration: none;
   background: white;
   color: #131d25;
   border-radius: 40px;
@@ -268,10 +334,18 @@ font-family: var(--font-family);
 
 .learn-more:hover {
   color: white;
-  background: #5465FF;
+  background: #78CBC3;
   transition: ease-in-out 0.3s;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
 
 #box-5 {
   display: flex;
@@ -404,18 +478,19 @@ font-family: var(--font-family);
 nav {
 	position: fixed;
   display: flex;
-  margin: 0 auto;
-  margin-left: 38%;
   justify-content: center;
+  align-items: flex-end;
 	top: 20px;
+  right: 30px;
   width: 25%;
   border-radius: 50px;
 	font-family: var(--font-family);
 	padding: 0 5%;
 	height: 50px;
-	background-color: #5465FF;
+	background-color: #78CBC3;
   opacity: 70%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  z-index: 2;
 
 }
 
@@ -479,8 +554,8 @@ nav .icon-burger .line {
 		width: auto;
 		height: auto;
 		flex-direction: column;
-    background-color: #5465FF;
-    backdrop-filter: blur(10px);
+    background-color: #78CBC3;
+    backdrop-filter: blur(20px);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
